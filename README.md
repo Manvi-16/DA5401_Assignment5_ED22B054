@@ -23,13 +23,13 @@ By visualizing high-dimensional gene expression data in two dimensions, we aim t
 - **Data loading:** Loads feature matrix (X) and multi-label targets (Y) directly from the ARFF file; checks dataset dimensions and inspects sample data.
 - **Label simplification:** Identifies the two most frequent single-label classes and the most common multi-label combination. Reassigns all remaining samples as 'Other' for simplified and interpretable visualizations.
 - **Feature scaling:** Standardizes features using StandardScaler, with explanation and statistical checks confirming the necessity and correctness of preprocessing.
-- **Explanatory markdown:** Brief summaries and tables after each major step to clarify process and findings.
+
 
 #### **Part B: t-SNE and Veracity Inspection [20 points]**
 - **t-SNE implementation:** Applies t-SNE with multiple perplexity values (5, 15, 30, 40, 50, 60) and interprets the influence of perplexity on clustering and structure.
 - **Visualization:** Creates a grid of scatter plots, each colored using the simplified label categories, with clearly labeled legends.
 - **Veracity inspection:** Analyzes the resulting plots for regions of noisy/ambiguous labels, outliers, and hard-to-learn samples using rubric-focused bullets. Each sub-point is explicitly highlighted for rapid grading.
-- **Justification:** Recommends an optimal perplexity for the yeast dataset and summarizes how well t-SNE visualizes local vs. global structure.
+- **Justification:** Recommends an optimal perplexity(35) for the yeast dataset and summarizes how well t-SNE visualizes local vs. global structure.
 
 #### **Part C: Isomap and Manifold Learning [20 points]**
 - **Isomap implementation:** Introduces Isomap, explains its approach to global structure preservation, and contrasts it with t-SNE. Applies Isomap to the scaled data and displays a 2D embedding using the same color scheme as t-SNE for direct comparison.

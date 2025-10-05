@@ -44,7 +44,3 @@ By visualizing high-dimensional gene expression data in two dimensions, we aim t
 * **Isomap** captures the **global geometry** of data, showing how gene expressions lie on a curved manifold.
 * Visual inspection supports understanding of **data veracity issues** — crucial before training classifiers on biological datasets.
 
-
-estions**
-- Notebook prepared by: [Your Name]
-- For questions about code or the reasoning in this notebook, please contact: [Your Email, optional]
